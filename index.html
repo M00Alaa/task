@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="welcome">
+      <div class="screen">
+        <img src="imags/Image Placeholder.png" alt="" />
+        <div class="content">
+          <h3>welcome</h3>
+          <p>We’re glad you’re here! Sign up to start</p>
+          <button id="get-started">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="signup d-none">
+        <div class="screen">
+            <img src="imags/Image Placeholder (1).png" alt="">
+            <div class="signup-content">
+                <h3>Create Account</h3>
+                <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+                <!--  -->
+                <div class="w-100 inputs">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-user"></i></span>
+                        <input type="text" id="usernameInput" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      <p id="usernameAlert" class="d-none alert alert-danger fa-1x">include at least 5 letters starting with capital</p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-regular fa-envelope"></i></span>
+                        <input type="email" id="userEmailInput" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                      </div>
+                      <p id="userEmailAlert" class="d-none alert alert-danger fa-1x">name@example.com</p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon3"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" id="userPasswordInput" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon3">
+                      </div>
+                      <p id="userPasswordAlert" class="d-none alert alert-danger fa-1x m-0">you must strenth your password, from 5 to 15 characters</p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon4"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" id="confirmPasswordInput" class="form-control" placeholder="Confirm password" aria-label="Confirm-password" aria-describedby="basic-addon4">
+                    </div>
+                      <p id="confirmPasswordAlert" class="d-none alert alert-danger fa-1x">you must strenth your password</p>
+                    <button id="create-account">Create Account</button>
+
+                    <p class="text-danger text-center mt-2 d-none" id="tryAgainMsg">signUp failed ! Try again</p>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </div>
+
+    <div class="succeed d-none">
+        <div class="screen">
+            <img src="imags/Image Placeholder (2).png" alt="">
+            <div class="succeed-content">
+                <h3>Successfully logged in</h3>
+                <a href="">User@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
